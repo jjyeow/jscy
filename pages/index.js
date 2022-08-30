@@ -71,7 +71,7 @@ export default function Home() {
                 <link rel="icon" href={WeddingLogo} />
             </Head>
             <NavigationBar/>
-            <FloatingWhatsApp style={{marginBottom: 50}} phoneNumber="+60198715905" chatMessage={"Hi, feel free to ask me anything! :)"} accountName={"Jiing Shyi (The Groom)"} avatar={Avatar}/>
+            <FloatingWhatsApp style={{marginBottom: 50}} phoneNumber="+60122881272" chatMessage={"Hi, feel free to ask me anything! :)"} accountName={"Jiing Shyi (The Groom)"} avatar={Avatar}/>
             <div style={{
                 width: 60,
                 height: 60,
