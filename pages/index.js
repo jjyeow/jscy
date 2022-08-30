@@ -71,23 +71,25 @@ export default function Home() {
                 <link rel="icon" href={WeddingLogo} />
             </Head>
             <NavigationBar/>
-            <FloatingWhatsApp style={{marginBottom: 50}} phoneNumber="+60122881272" chatMessage={"Hi, feel free to ask me anything! :)"} accountName={"Jiing Shyi (The Groom)"} avatar={Avatar}/>
-            <div style={{
-                width: 60,
-                height: 60,
-                borderRadius: "50%",
-                backgroundColor: "#303f9f",
-                zIndex: 9999,
-                position: "fixed",
-                bottom: "7rem",
-                right: 32,
-                display: "flex",
-                textAlign: "center",
-                justifyContent: "center",
-                alignItems: "center"
-            }}>
-               {playing ? <MdPause color="white" onClick={()=> {audio?.pause(); setPlaying(false)}}/> : <MdPlayArrow color="white" onClick={()=> {audio?.play(); setPlaying(true)}}/>}
-            </div>
+            <FloatingWhatsApp phoneNumber="+60122881272" chatMessage={"Hi, feel free to ask me anything! :)"} accountName={"Jiing Shyi (The Groom)"} avatar={Avatar}/>
+            { audio != null ?  
+                <div style={{
+                    width: 60,
+                    height: 60,
+                    borderRadius: "50%",
+                    backgroundColor: "#303f9f",
+                    zIndex: 9999,
+                    position: "fixed",
+                    bottom: "2rem",
+                    left: 32,
+                    display: "flex",
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}>
+                {playing ? <MdPause color="white" onClick={()=> {audio?.pause(); setPlaying(false)}}/> : <MdPlayArrow color="white" onClick={()=> {audio?.play(); setPlaying(true)}}/>}
+                </div> 
+            : null}
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>Music!</ModalHeader>
                 <ModalBody>
@@ -176,7 +178,7 @@ export default function Home() {
             >
                 <div id="details" className={carouselVisible ? "fade-in-right-section-is-visible" : ""}>
                     <div style ={{marginTop: 50, paddingTop: 50, backgroundColor: "#e1f5fe", color: "#303f9f", }}>
-                        <h1 style={{textAlign: "center", marginBottom: 50, fontFamily: "Grypen-Bold", fontSize: "4rem"}}>Details</h1>
+                        <h1 style={{textAlign: "center", marginBottom: 50, fontFamily: "Grypen-Bold", fontSize: "3.5rem"}}>- Details -</h1>
                         <div style={{width: "100vw", height: "100%", position: "relative", marginTop: -20}}>
                             <Image src={Underline} alt={"Underline"} width="100%" height="10%" layout="responsive" objectFit="contain"></Image>
                         </div>
@@ -211,7 +213,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div id="weddingphotos" className={carouselVisible ? "fade-in-section-is-visible" : ""} style={{paddingTop: 60}}>
-                            <h1 style={{textAlign: "center", fontFamily: "Grypen-Bold", fontSize: "4rem"}}>- Wedding Photos -</h1>
+                            <h1 style={{textAlign: "center", fontFamily: "Grypen-Bold", fontSize: "3.5rem"}}>- Wedding Photos -</h1>
                             <div style={{display:"flex",flexDirection:"column",alignItems:"center",width:"100%",color:"white",
                                 backgroundSize: 'cover',backgroundRepeat: 'no-repeat',backgroundPosition: 'center',}}>
                                 <div style={{width:"100%",maxWidth:1150}}>
@@ -314,7 +316,7 @@ export default function Home() {
                 }}
             >
                 <div id="direction" className={videoVisible ? "fade-in-section-is-visible" : ""} style={{backgroundColor: "white", paddingTop: 60}}>
-                    <h1 style={{textAlign: "center", paddingTop: 40, fontFamily: "Grypen-Bold", color: "black", fontSize: "4rem"}}>- DIRECTION -</h1>
+                    <h1 style={{textAlign: "center", paddingTop: 40, fontFamily: "Grypen-Bold", color: "black", fontSize: "3.5rem"}}>- DIRECTION -</h1>
                     <div style={width ? {display: "flex", justifyContent: "space-evenly", padding: "20px 20px 100px 20px"} : {display: "flex", flexDirection: "column", justifyContent: "space-evenly", padding: 20}}>
                         <div style={{width:"100%",height:"80vh",padding:20}}>
                             {hasWindow && <ReactPlayer url='https://www.youtube.com/embed/W6-dA08M9DA' width="100%" height="100%"  controls={true}/>}
