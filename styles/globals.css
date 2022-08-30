@@ -24,3 +24,86 @@ a {
     background: black;
   }
 }
+
+@font-face {
+  font-family: 'Grypen';
+  src: url('../public/asset/fonts/QwitcherGrypen-Regular.ttf');
+}
+@font-face {
+  font-family: 'Grypen-Bold';
+  src: url('../public/asset/fonts/QwitcherGrypen-Bold.ttf');
+}
+@font-face {
+  font-family: 'Laila';
+  src: url('../public/asset/fonts/Laila-Regular.ttf');
+}
+
+.nav-link {
+  color: "#303f9f" !important;
+}
+
+.styles-module_floatingWhatsapp__1akvz {
+  z-index: 9999;
+}
+
+.fade-in-section-is-visible {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+.fade-in-right-section-is-visible {
+  animation: fadeInRight 3s;
+}
+
+.fade-in-left-section-is-visible {
+  animation: fadeInLeft 3s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(40px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-40px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
