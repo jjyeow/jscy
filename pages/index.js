@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 import React, {useState, useEffect, useRef} from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import NavigationBar from '../components/navigationbar';
@@ -27,6 +28,7 @@ export default function Home() {
     const ECard='/asset/images/ecard.jpg'
     const Border='/asset/images/border2.jpg'
     const Underline='/asset/images/underline.png'
+    const WeddingLogo='/asset/logo/wedding.png'
 
 
     useEffect(() => {
@@ -63,6 +65,11 @@ export default function Home() {
 
     return (
         <div style={{backgroundColor: "white", color: "#062440"}}>
+            <Head>
+                <title>Jiing Shyi & Chai Ying Wedding</title>
+                <meta name="description" content="Jiing Shyi & Chai Ying Wedding" />
+                <link rel="icon" href={WeddingLogo} />
+            </Head>
             <NavigationBar/>
             <FloatingWhatsApp style={{marginBottom: 50}} phoneNumber="+60198715905" chatMessage={"Hi, feel free to ask me anything! :)"} accountName={"Jiing Shyi (The Groom)"} avatar={Avatar}/>
             <div style={{
