@@ -194,7 +194,7 @@ export default function Home() {
                                             <td style={{padding:15, fontFamily: "Laila", fontSize: "0.7rem"}}>Tea Ceremony</td>
                                         </tr>
                                         <tr>
-                                            <td style={{padding:15, fontFamily: "Laila", fontSize: "0.7rem"}}>6.00pm</td>
+                                            <td style={{padding:15, fontFamily: "Laila", fontSize: "0.7rem"}}>7.00pm</td>
                                             <td style={{padding:15, fontFamily: "Laila", fontSize: "0.7rem"}}>Wedding Dinner begins</td>
                                         </tr>
                                     </tbody>
