@@ -46,6 +46,13 @@ a {
   z-index: 9999;
 }
 
+.styles-module_whatsappButton__IWx9V{
+  fill: #fff;
+  height: 55px !important;
+  padding: .5rem;
+  width: 55px !important;
+}
+
 .fade-in-section-is-visible {
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;

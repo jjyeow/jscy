@@ -39,8 +39,8 @@ class NavigationBar extends React.Component {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#aboutus">
-                                About Us
+                            <NavLink href="#schedule">
+                                Schedule
                             </NavLink>
                         </NavItem>
                         <NavItem>
