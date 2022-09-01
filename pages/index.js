@@ -149,7 +149,7 @@ export default function Home() {
                                             <td style={{padding:30, fontFamily: "Laila", fontSize: "1.5rem"}}>Tea Ceremony</td>
                                         </tr>
                                         <tr>
-                                            <td style={{padding:30, fontFamily: "Laila", fontSize: "1.5rem"}}>6.00pm</td>
+                                            <td style={{padding:30, fontFamily: "Laila", fontSize: "1.5rem"}}>7.00pm</td>
                                             <td style={{padding:30, fontFamily: "Laila", fontSize: "1.5rem"}}>Wedding Dinner begins</td>
                                         </tr>
                                     </tbody>
@@ -330,9 +330,9 @@ export default function Home() {
                                                         backgroundColor:"white",width:"80vw",cursor:"pointer"}} onClick={()=>{
                                                         }}>
                                                         <Image src={item.original} width={1500} height={1000} />
-                                                        <div style={{display:"flex",flexDirection:"column",padding:10}}>
+                                                        {/* <div style={{display:"flex",flexDirection:"column",padding:10}}>
                                                             <div style={width ? {fontWeight:"bold",fontSize:20, color: "#303f9f", fontFamily: "Laila"} : {fontWeight:"bold",fontSize:14, color: "#303f9f", fontFamily: "Laila"}}>{item.title}</div>
-                                                        </div>
+                                                        </div> */}
                                                     </div>
                                                 </div>
                                             )
